@@ -2,8 +2,10 @@
 # Change this path to your Mutation++ install path
 MUTATIONPP_INSTALL = $(MPP_DIRECTORY)/install
 
-FC_FLAGS = -J $(MUTATIONPP_INSTALL)/include/mutation++ \
-           -O3 -g -fdefault-real-8
+CXX_FLAGS = -I $(MUTATIONPP_INSTALL)/include \
+			-I $(MUTATIONPP_INSTALL)/include/mutation++ \
+			-I $(MPP_DIRECTORY)/thirdparty/eigen \
+ 			-O3 -std=c++11
 
 # use .dylib for Mac, .so for Unix
 UNAME_S := $(shell uname -s)

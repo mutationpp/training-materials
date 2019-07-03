@@ -2,7 +2,7 @@
 # Change this path to your Mutation++ install path
 MUTATIONPP_INSTALL = $(MPP_DIRECTORY)/install
 
-FC_FLAGS = -J $(MUTATIONPP_INSTALL)/include/mutation++ \
+FC_FLAGS = -J $(MUTATIONPP_INSTALL)/include \
            -O3 -g -fdefault-real-8
 
 # use .dylib for Mac, .so for Unix

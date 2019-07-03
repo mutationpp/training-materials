@@ -6,7 +6,7 @@ using namespace Mutation;
 int main(int argc, char* argv[])
 {
     // Load air5 mixture or the mixture given on command line, if given
-    std::string name = "air5";
+    std::string name = "air_5";
     if (argc > 1) name = argv[1];
     Mixture mix(name);
     

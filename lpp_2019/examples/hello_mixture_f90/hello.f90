@@ -5,7 +5,7 @@ program main
     character(len=12) :: species, state_model
     integer :: j, ns
     
-    mixture     = "air5"
+    mixture     = "air_5"
     state_model = "ChemNonEq1T"
     
     ! Initialize the mutation++ library
